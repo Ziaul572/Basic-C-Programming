@@ -1,0 +1,15 @@
+############New Changes Upload in git############
+git add .
+git commit -am "comment"
+git push origin master
+
+
+############New Changes Download from git########
+git status
+if change have with red text
+git commit -am "Change Details Comment"
+
+git pull origin master
+
+
+
