@@ -12,7 +12,7 @@ int main()
                 o++;
             }
      }
-     int even[e], odd[o];
+     int even[e] = {0}, odd[o] = {0};
      for(i = 0; i < 5; i++){
             if(tc[i] % 2 == 0){
                 even[j] = tc[i];
@@ -26,11 +26,11 @@ int main()
             }
      }
      printf("The even numbers are :");
-     for(i=0;i<5;i++){
+     for(i=0;i<e;i++){
         printf(" %d ",even[i]);
      }
      printf("The odd numbers are :");
-     for(i=0;i<5;i++){
+     for(i=0;i<o;i++){
         printf(" %d ",odd[i]);
      }
      }
