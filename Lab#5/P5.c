@@ -3,14 +3,20 @@
 #include<stdio.h>
 int main()
 {
-    int i;
-    int data[5];
+    int i, j, count = 0;
+    int data[4];
     printf("Enter the values.\n");
-   for(i = 1; i<= 5 ; i++){
+   for(i = 0; i < 5; i++){
     scanf("%d", &data[i]);
    }
-   for(i = 1; i <= n; i++){
-    if(data[])
+   for(i = 0; i < 5; i++){
+     for(j = i+1; j < 5; j++){
+        if(data[i] == data[j]){
+            count++;
+            break;
+        }
+     }
    }
+   printf("The number of duplicate elements = %d", count);
 
 }
