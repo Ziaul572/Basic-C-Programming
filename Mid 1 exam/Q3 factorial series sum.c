@@ -1,9 +1,13 @@
 #include<stdio.h>
 int main()
 {
-    double i, sum = 1;
+    int i, sum = 0, j = 1, t = 1;
     for(i = 2; i <= 12; i = i +2){
-        sum = sum * i * (i - 1);
+       for(j = 1; j <= i; j= j + 2){
+        j = i * j *t;
+        sum = sum + j;
+        t++ ;
+       }
     }
-    printf("Summation = %lf ",sum);
+    printf("Summation = %d ",sum);
 }

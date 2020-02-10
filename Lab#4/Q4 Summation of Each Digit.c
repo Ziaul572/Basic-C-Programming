@@ -1,17 +1,21 @@
-#include<stdio.h>
-int main()
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+int n;
+scanf("%d", &n);
+int digit, temp, sum = 0;
+temp = n;
+//Complete the code to calculate the sum of the five digits on n.
+while(temp > 0)
 {
-    int i,a,b=0,sum=0;
-    printf("Enter a value.\n");
-    scanf("%d",&a);
-    for(i=1;i<=a;i++)
-    {
-        b=a%10;
-        a=a/10;
-        sum=sum+b;
-        if(a==0){
-            break;
-        }
-    }
-    printf("The summation is %d\n",sum);
+    digit = temp % 10;
+    sum = sum + digit;
+    temp = temp / 10;
+}
+printf(" The summation of digits = %d\n",sum);
+return 0;
 }
