@@ -14,6 +14,7 @@ int main()
     for(a = 0; a < n - 1; a++)
     {
         min = arr[a];
+        p = a;
         for(j = a + 1; j < n ; j++)
         {
             if(arr[j] < min)
@@ -23,8 +24,6 @@ int main()
                 p = j;
                 //Index Number Position..
             }
-
-
         }
         t = arr[a];
         arr[a] = arr[p];
@@ -33,7 +32,7 @@ int main()
     int c;
     for(c = 0; c < n; c++)
     {
-        printf("%d ", arr[c]);
+        printf("%d\t", arr[c]);
     }
     //printf("%d ", t);
 }
