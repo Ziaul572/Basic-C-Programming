@@ -10,8 +10,8 @@ int main()
     char character, ascii, c[100];
     int i = 0, b = 0;
 
-    printf("Choose an Option.\n1.B.M.I Checker.\n2.Temperature Conversion.\n3.ASCII Name.");
-   // label :
+    printf("Choose an Option.\n1.B.M.I Checker.\n2.Temperature Conversion.\n3.ASCII Name.\n");
+   label :
     scanf("%d", &o);
     switch (o){
      case 1:
@@ -47,7 +47,7 @@ return 0;
      case 2 :
 
     printf("Choose a Unit for conversion.\n\n1 . Celcius \n2 . Fahrenheit \n3 . Kelvin\n ");
-   // Label :
+    Label :
     scanf("%d", &n);
     switch (n){
         case 1 :  printf("Enter the temperature in Celcius.\n");
@@ -69,10 +69,10 @@ return 0;
              printf(" %.2f K = %.2f C \n %.2f K = %.2f F ", kelvin, celcius, kelvin, fahrenheit);
              break;
         default : printf("Please Enter input between 1 and 3\n");
-             // goto Label;
+              goto Label;
     }
    return 0;
-      /*  case 3 :
+        case 3 :
 
     printf("Enter Character for ASCII values.\n");
     do {
@@ -93,6 +93,7 @@ return 0;
     return 0;
         default :
             printf("Enter Between 1 and 3.\n");
-            //goto label;
+            goto label;
            return 0;
-*/ }
+}
+}
