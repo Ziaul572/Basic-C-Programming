@@ -72,7 +72,7 @@ return 0;
              // goto Label;
     }
    return 0;
-        case 3 :
+      /*  case 3 :
 
     printf("Enter Character for ASCII values.\n");
     do {
@@ -95,4 +95,4 @@ return 0;
             printf("Enter Between 1 and 3.\n");
             //goto label;
            return 0;
-}
+*/ }

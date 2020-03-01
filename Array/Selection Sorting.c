@@ -11,11 +11,11 @@ int main()
         scanf("%d", &arr[i]);
     }
     int min, j, p, t, a;
-    for(a = 0; a < n - 1; a++)
+    for(i = 0; i < n - 1; i++)
     {
-        min = arr[a];
-        p = a;
-        for(j = a + 1; j < n ; j++)
+        min = arr[i];
+        p = i;
+        for(j = i + 1; j < n ; j++)
         {
             if(arr[j] < min)
             {
@@ -25,14 +25,14 @@ int main()
                 //Index Number Position..
             }
         }
-        t = arr[a];
-        arr[a] = arr[p];
+        t = arr[i];
+        arr[i] = arr[p];
         arr[p] = t;
     }
     int c;
-    for(c = 0; c < n; c++)
+    for(i = 0; i < n; i++)
     {
-        printf("%d\t", arr[c]);
+        printf("%d\t", arr[i]);
     }
     //printf("%d ", t);
 }
