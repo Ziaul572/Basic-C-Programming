@@ -9,8 +9,10 @@ int main()
     printf("Enter a String.\n");
     gets(arr);
     p = strlen(arr);
-    for(i = 0; i < p; i++){
-        if (arr[i] == 'a' || arr[i] == 'e' || arr[i] == 'i' || arr[i] == 'o' || arr[i] == 'u'){
+    for(i = 0; i < p; i++)
+    {
+        if (arr[i] == 'a' || arr[i] == 'e' || arr[i] == 'i' || arr[i] == 'o' || arr[i] == 'u')
+        {
             copy[j] = arr[i];
             j++;
         }
