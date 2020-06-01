@@ -15,7 +15,7 @@ float populationDensity(int pop, float area)
 int main()
 {
     struct country x[50];
-    int i, testCase;
+    int i, testCase, count = 0;
     float density;
     int densityIndex;
     float leastDense;
@@ -24,9 +24,11 @@ int main()
 
     for(i = 0; i < testCase; i++)
     {
-
+        printf("Enter the name of the Country : ");
         scanf("%s", x[i].name);
+        printf("Enter the population of %s : ", x[i].name);
         scanf("%d", &x[i].population);
+        printf("Enter the square area of %s : ", x[i].name);
         scanf("%f", &x[i].area);
     }
     leastDense = populationDensity(x[0].population, x[0].area);
@@ -35,9 +37,11 @@ int main()
         density = populationDensity(x[i].population, x[i].area);
         if (density < leastDense)
         {
+            leastDense = density;
             densityIndex = i;
+            count++;
         }
-        else
+        if(count == 0)
         {
             densityIndex = 0;
         }

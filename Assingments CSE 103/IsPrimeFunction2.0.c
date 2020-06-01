@@ -35,6 +35,6 @@ int main()
             count++;
         }
     }
-    printf("%d", count);
+    printf("There are %d Prime Numbers", count);
 }
 

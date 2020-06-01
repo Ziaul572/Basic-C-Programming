@@ -28,7 +28,7 @@ int main()
     int i;
     int highestIndex;
     struct student x[100];
-    printf("Enter Number of Elements.\n");
+    printf("Enter Number of Students.\n");
     scanf("%d", &testCase);
 
     for(i = 0; i < testCase; i++)
