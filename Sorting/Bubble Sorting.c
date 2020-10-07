@@ -1,6 +1,4 @@
 #include<stdio.h>
-#include<time.h>
-
 int main()
 {
     int i, n = 5;
@@ -8,7 +6,6 @@ int main()
    // printf("Enter number of elements.\n");
    // scanf("%d", &n);
    // printf("Enter the values.\n");
-   clock_t begin = clock();
     for(i = 0; i < n; i++)
     {
         scanf("%lld", &arr[i]);
@@ -32,8 +29,5 @@ int main()
     {
         sum = sum + arr[c];
     }
-    clock_t end = clock();
-    double time_spent =(double) (end - begin) / CLOCKS_PER_SEC ;
     printf("%lld %lld",sum - arr[n - 1], sum - arr[0]);
-    printf(" =%lf s ", time_spent);
 }
